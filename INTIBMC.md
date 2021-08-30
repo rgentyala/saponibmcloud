@@ -1,66 +1,9 @@
-#Introduction to IBM Cloud for SAP
+## Introduction to IBM Cloud for SAP
+
 IBM Cloud is continuously evolving with various options that are suitable for enterprise computing specifically focusing on SAP. SAP as an enterprise application needs better computation, storage, networking and security requirements. Certification of Infrastructure is key and IBM Cloud s continuously working with SAP to certify more and more profiles of computing hardware on both Intel and Power systems. 
 
-1. **Kubernetes Networking 101** (60 mins), you will use different ways to control traffic on a Kubernetes cluster with Service types. Start [here](services/services.md).
-1. **Add an Ingress on OpenShift** (15 minutes), add an Ingress and Route to expose a Service, you will use different types of TLS termination to secure Routes on OpenShift: edge, passthrough and reencrypt. Start [here](route/route.md).
-1. **Network Policies and Calico** (15 minutes), create a Network Policy and use Calico. Start [here](calico/networkpolicy.md).
-1. **Kubernetes Network Security using a Virtual Private Cloud (VPC)** (90 mins), you will deploy a guestbook application to a Kubernetes cluster in a Virtual Private Cloud (VPC) Gen2, you will create the VPC, add a subnet, attach a public gateway, and update a security group with rules to allow inbound traffic to the guestbook application. Start [here](vpc/vpcgen2.md).
-1. **[Istio](https://ibm.github.io/istio101/)**, use Istio to manage network traffic, load balance across microservices, enforce access policies, verify service identity, and more.
-
-This series of workshops on Kubernetes Networking is accompanied by a [lecture on Kubernetes Networking](https://raw.githubusercontent.com/IBM/kubernetes-networking/master/pdf/KubernetesNetworking-Lecture.pdf).
-
-Kubernetes Networking is part of the series `Kubernetes Security`, which includes:
-
-1. Kubernetes Security,
-2. Kubernetes Networking,
-3. Kubernetes Storage,
-4. Kubernetes Automation (DevOps, IaC, CI/CD).
-
-## Next steps
-
-Continue your learning by visiting the [Istio workshop](https://ibm.github.io/istio101/). With Istio, you can manage network traffic, load balance across microservices, enforce access policies, verify service identity, and more.
-
-## Prerequirementss
-
-* Free IBM Cloud account, to create a new IBM Cloud account go [here](https://ibm.github.io/workshop-setup/NEWACCOUNT/).
-* Free `Pay-As-You-Go` account. To upgrade a free IBM Cloud account, go [here](https://ibm.github.io/workshop-setup/PAYASYOUGO/).
-* CognitiveLabs.ai account, to access a client terminal at CognitiveLabs.ai, go [here](https://ibm.github.io/workshop-setup/COGNITIVECLASS/).
-* Kubernetes standard cluster v1.18 with at least 2 worker nodes on a VLAN, a subnet with public IPs, external LoadBalancer (for details about VLAN, subnets and IPs, see [here](https://cloud.ibm.com/docs/containers?topic=containers-subnets) ).
-
-Go to [Setup](setup/setup1.md) for more details.
-
-## Labs
-
-1. **Lab1 Kubernetes Networking 101**
-    1. [Setup](services/setup1.md)
-    2. [Services](services/services.md)
-    3. [ClusterIP](services/clusterip.md)
-    4. [NodePort](services/nodeport.md)
-    5. [Loadbalancer NLB](services/loadbalancer.md)
-    6. [ExternalName](services/externalname.md)
-    7. [Ingress ALB](services/ingress-alb.md)
-1. **Lab2 Secured Routes**
-    1. [Secured Routes and TLS Termination](route/secured-routes.md)
-1. **Lab3 Network Policies**
-    1. [Network Policy and Calico](calico/networkpolicy.md)
-1. **Lab4 Secure a Cluster using VPC**
-    1. [Setup](vpc/setup2.md)
-    2. [VPC Gen2](vpc/vpcgen2.md)
-
-## Technologies
-
-This workshop was tested using the following technologies:
-
-* IBM Cloud Kubernetes Service (IKS) version 1.19, 2 worker nodes, flavor u3c.2x4
-* Calico client version v3.17.1
-* Calico cluster version v3.16.5
-* ibmcloud version 1.3.0
-* ibmcloud container-service/kubernetes-service   1.0.28
-* vpc-infrastructure/infrastructure-service 0.7.5
-* kubectl version 1.19
-
-## Contributors
-
-* Remko de Knikker, [remkohdev](https://github.com/remkohdev),
-* Masa Abushamleh, [nerdingitout](https://github.com/nerdingitout)
-* Tim Robinson, [timroster](https://github.com/timroster),
+1. **Why IBM Cloud for SAP?** IBM has more than 45 years of partnership. Together they have worked on various complex business requirements to address complex workloads run on SAP from implementations, configurations, integrations and upgrades. SAP over past several years worked together with IBM from R/2 systems until today where they introduced SAP HANA, RISE, BTP and name any such big initiatives, we partnered, collaborated, cocreated, coinnovated and contributed most complex IT business requirements for various customers across the world.
+2. **Business Computing Evolution** SAP used to run heavy workloads from their beginning days of SAP innovations used IBM Computing whether it is mainframes, power systems and other platforms. From centralyzed computing to distributed, Virtualization to Cloud, we have developed so many methods that can fulfill requirements of small, medium and large businesses.
+3. **Present Day Challenges** SAP is still a monolithic application runs on relational databases and over a period of using SAP systems, database sizes whether they run on SAP HANA or other databases need lot of storage, computing resources. Managing response times whether it is transactional applications, web that run on SAP Web Dynpro or FIORI needs faster response times and also need to address heavy workloads in customer IT enterprises. 
+    **SAP S/4HANA and Integrated Enterprise requirements for Future** SAP ECC Support officially was announced to be 2027 and now that is becoming 2030 due to pandemic that leads customers to plan their S/4HANA conversions sooner than later and heavy computation and changing dynamics around infrastructure requirements may not help customers to keep their investment in to their present on premise infrastructure and that means lot of customers are looking for better cloud provider that just not holds SAP systems but their entire integrated infrastructure needs to work uninturrupted. SAP applications also need integration with other SAP own clouds like Concur, ARIBA, Hybris and also thirdparty cloud integrations like SalesForce, Banking Connector and others needs an ecosystems that involve multiple clouds, on premise integration that makes future infrastructure as Hybrid Multi Cloud Model. IBM from the beginning has this understand and security is a big challenge. IBM cloud considers each and every aspect that enables these requirements.
+ 
